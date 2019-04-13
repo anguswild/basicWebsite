@@ -1,4 +1,5 @@
 # basicWebsite
 Basic Website with Laravel by Patricio Quezada
 
-[![N|Solid](https://madewithlaravel.com/images/powered-madewithlaravel--white.png)](https://laravel.com/)
+# Made with 
+<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
