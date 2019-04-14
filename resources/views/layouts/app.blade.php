@@ -21,7 +21,10 @@
     </div>
   </div>
   <footer id="footer" class="text-center">
-    Copyright {{now()->year}} &copy; Patricio Quezada
+    <div class="container">
+      <span class="text-muted">Copyright {{now()->year}} &copy; Patricio Quezada</span>
+    </div>
+
   </footer>
 
   </body>
