@@ -13,6 +13,7 @@
     @endif
     <div class="row pt-4">
       <div class="col-8">
+        @include('inc.messages')
         @yield('content')
       </div>
       <div class="col-4">
