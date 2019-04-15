@@ -17,7 +17,7 @@
     <label for="message">Message</label>
 		<textarea class="form-control" placeholder="Enter message" name="message" cols="50" rows="10" id="message"></textarea>
   </div>
-  <div>
+  <div class="form-group">
 		<input class="btn btn-primary" type="submit" value="Submit">
   </div>
 </form>
