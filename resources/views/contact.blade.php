@@ -2,21 +2,23 @@
 
 @section('content')
 <h1>Contact</h1>
-{{ Form::open(['url' => 'contact/submit']) }}
+<form action="contact/submit" method="post">
+	@csrf
 	<div class="form-group">
-    {{Form::label('name', 'Name')}}
-    {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Enter name'])}}
+    <label for="name">Name</label>
+		<input class="form-control" type="text" name="name" id="name" placeholder="Enter name">
   </div>
   <div class="form-group">
-    {{Form::label('email', 'E-Mail Address')}}
-    {{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Enter email'])}}
+		<label for="email">E-Mail Address</label>
+		<input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
-    {{Form::label('message', 'Message')}}
-    {{Form::textarea('message', '', ['class' => 'form-control', 'placeholder' => 'Enter message'])}}
+    <label for="message">Message</label>
+		<textarea class="form-control" placeholder="Enter message" name="message" cols="50" rows="10" id="message"></textarea>
   </div>
   <div>
-    {{ Form::submit('Submit', ['class' => 'btn btn-primary']) }}
+		<input class="btn btn-primary" type="submit" value="Submit">
   </div>
-{{ Form::close() }}
+</form>
 @endsection
